@@ -1,0 +1,33 @@
+/*zhen hao*/
+#include <bits/stdc++.h>
+using namespace std;
+
+#define lson l, m, rt*2
+#define rson m + 1, r, rt*2+1
+#define xx first
+#define yy second
+
+typedef long long LL;
+typedef unsigned long long ULL;
+typedef pair<int,int> pii;
+
+int get_random(int l, int r) {
+    return rand() % (r - l) + l;
+}
+
+int main() {
+#ifdef JUDGE
+//    freopen("case.in", "r", stdin);
+    freopen("G:\\C\\AC\\hard\\data\\in5.txt", "w", stdout);
+#endif
+    srand((unsigned)time(0));
+    int T = 9;
+    cout << T << '\n';
+    for (int i = 1; i <= T; i++) {
+        int n = get_random(70000, 90000);
+        for (int j = 0; j < n; j++)
+            putchar('a' + get_random(12, 18));
+        puts("");
+    }
+    return 0;
+}
